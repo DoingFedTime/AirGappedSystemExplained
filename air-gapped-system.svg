@@ -1,0 +1,400 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Cyberpunk Background -->
+  <defs>
+    <linearGradient id="cyberbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a1a"/>
+      <stop offset="100%" stop-color="#1a1a2e"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="noise" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+
+  <!-- Main Background -->
+  <rect width="800" height="600" fill="url(#cyberbg)"/>
+  
+  <!-- Grid Lines -->
+  <g stroke="#0ff" stroke-width="0.5" opacity="0.2">
+    <rect x="0" y="0" width="800" height="600" fill="none" stroke-width="2"/>
+    
+    <!-- Horizontal grid lines -->
+    <line x1="0" y1="50" x2="800" y2="50"/>
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="250" x2="800" y2="250"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="350" x2="800" y2="350"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="0" y1="450" x2="800" y2="450"/>
+    <line x1="0" y1="500" x2="800" y2="500"/>
+    <line x1="0" y1="550" x2="800" y2="550"/>
+    
+    <!-- Vertical grid lines -->
+    <line x1="50" y1="0" x2="50" y2="600"/>
+    <line x1="100" y1="0" x2="100" y2="600"/>
+    <line x1="150" y1="0" x2="150" y2="600"/>
+    <line x1="200" y1="0" x2="200" y2="600"/>
+    <line x1="250" y1="0" x2="250" y2="600"/>
+    <line x1="300" y1="0" x2="300" y2="600"/>
+    <line x1="350" y1="0" x2="350" y2="600"/>
+    <line x1="400" y1="0" x2="400" y2="600"/>
+    <line x1="450" y1="0" x2="450" y2="600"/>
+    <line x1="500" y1="0" x2="500" y2="600"/>
+    <line x1="550" y1="0" x2="550" y2="600"/>
+    <line x1="600" y1="0" x2="600" y2="600"/>
+    <line x1="650" y1="0" x2="650" y2="600"/>
+    <line x1="700" y1="0" x2="700" y2="600"/>
+    <line x1="750" y1="0" x2="750" y2="600"/>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="60" font-family="monospace" font-size="32" fill="#0ff" text-anchor="middle" filter="url(#glow)">AIR-GAPPED SYSTEM</text>
+  
+  <!-- Subtitle -->
+  <text x="400" y="90" font-family="monospace" font-size="18" fill="#e6198d" text-anchor="middle">PHYSICAL ISOLATION FOR MAXIMUM SECURITY</text>
+  
+  <!-- Social Media Links -->
+  <g transform="translate(285, 115) scale(1)">
+    <!-- Website -->
+    <a href="https://www.sambent.com" target="_blank">
+      <g transform="translate(0, 0)">
+        <rect x="-12" y="-12" width="24" height="24" rx="3" fill="#0f1a2c" stroke="#0ff" stroke-width="1.5" opacity="0.8">
+          <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
+        </rect>
+        <circle cx="0" cy="0" r="7" fill="none" stroke="#0ff" stroke-width="1.5"/>
+        <line x1="-7" y1="0" x2="7" y2="0" stroke="#0ff" stroke-width="1.5"/>
+        <path d="M0 -7 a7 7 0 0 1 2 7 a7 7 0 0 1-2 7 a7 7 0 0 1-2-7 a7 7 0 0 1 2-7z" fill="none" stroke="#0ff" stroke-width="1.5"/>
+      </g>
+    </a>
+    
+    <!-- GitHub -->
+    <a href="https://github.com/DoingFedTime" target="_blank">
+      <g transform="translate(30, 0)">
+        <rect x="-12" y="-12" width="24" height="24" rx="3" fill="#0f1a2c" stroke="#0ff" stroke-width="1.5" opacity="0.8">
+          <animate attributeName="opacity" values="0.8;1;0.8" dur="3.2s" repeatCount="indefinite"/>
+        </rect>
+        <path d="M0 -8 C-4.5 -8 -8 -4.5 -8 0 C-8 3.6 -5.5 6.5 -2 7.5 C-1.5 7.6 -1.3 7.3 -1.3 7 C-1.3 6.7 -1.3 5.8 -1.3 5 C-4 5.5 -4.5 3.5 -4.5 3.5 C-5 2 -5.7 1.7 -5.7 1.7 C-6.7 0.8 -5.6 0.8 -5.6 0.8 C-4.5 0.9 -4 2.1 -4 2.1 C-3 3.9 -1.5 3.5 -1.2 3.3 C-1.1 2.5 -0.7 2 -0.3 1.7 C-2.8 1.4 -5.5 0.1 -5.5 -4 C-5.5 -5.3 -5 -6.4 -4 -7.2 C-4.1 -7.5 -4.5 -8.4 -3.9 -9.9 C-3.9 -9.9 -3 -10.2 -1.3 -9.1 C-0.9 -9.2 -0.5 -9.3 0 -9.3 C0.5 -9.3 0.9 -9.2 1.3 -9.1 C3 -10.2 3.9 -9.9 3.9 -9.9 C4.5 -8.4 4.1 -7.5 4 -7.2 C5 -6.4 5.5 -5.3 5.5 -4 C5.5 0.1 2.8 1.4 0.3 1.7 C0.8 2.1 1.3 2.8 1.3 3.8 C1.3 5.3 1.3 6.6 1.3 7 C1.3 7.3 1.5 7.6 2 7.5 C5.5 6.5 8 3.6 8 0 C8 -4.5 4.5 -8 0 -8 Z" fill="#0ff"/>
+      </g>
+    </a>
+    
+    <!-- YouTube -->
+    <a href="https://youtube.com/@sam_bent" target="_blank">
+      <g transform="translate(60, 0)">
+        <rect x="-12" y="-12" width="24" height="24" rx="3" fill="#0f1a2c" stroke="#e6198d" stroke-width="1.5" opacity="0.8">
+          <animate attributeName="opacity" values="0.8;1;0.8" dur="2.8s" repeatCount="indefinite"/>
+        </rect>
+        <path d="M-8 -5 L8 -5 C9 -5 10 -4 10 -3 L10 5 C10 6 9 7 8 7 L-8 7 C-9 7 -10 6 -10 5 L-10 -3 C-10 -4 -9 -5 -8 -5 Z" fill="none" stroke="#e6198d" stroke-width="1.5"/>
+        <polygon points="-2,3 5,1 -2,-1" fill="#e6198d"/>
+      </g>
+    </a>
+    
+    <!-- Twitter/X -->
+    <a href="https://twitter.com/DoingFedTime" target="_blank">
+      <g transform="translate(90, 0)">
+        <rect x="-12" y="-12" width="24" height="24" rx="3" fill="#0f1a2c" stroke="#0ff" stroke-width="1.5" opacity="0.8">
+          <animate attributeName="opacity" values="0.8;1;0.8" dur="3.5s" repeatCount="indefinite"/>
+        </rect>
+        <path d="M-6 6 L0 0 L-6 -6 M0 0 L6 6 M0 0 L6 -6" stroke="#0ff" stroke-width="2" fill="none"/>
+      </g>
+    </a>
+    
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/sam-bent/" target="_blank">
+      <g transform="translate(120, 0)">
+        <rect x="-12" y="-12" width="24" height="24" rx="3" fill="#0f1a2c" stroke="#0ff" stroke-width="1.5" opacity="0.8">
+          <animate attributeName="opacity" values="0.8;1;0.8" dur="3.1s" repeatCount="indefinite"/>
+        </rect>
+        <rect x="-7" y="-7" width="14" height="14" rx="2" fill="none" stroke="#0ff" stroke-width="1.5"/>
+        <rect x="-5" y="-1" width="3" height="6" fill="#0ff"/>
+        <circle cx="-3.5" cy="-4" r="1.5" fill="#0ff"/>
+        <path d="M1 -1 C1 -1 2 -2 4 -1 C6 0 6 2 6 2 L6 5 L3 5 L3 2 C3 1 2 0 1 0 C0 0 0 1 0 2 L0 5 L-3 5 L-3 -1 L0 -1" fill="#0ff"/>
+      </g>
+    </a>
+    
+    <!-- Email -->
+    <a href="mailto:contact@sambent.com" target="_blank">
+      <g transform="translate(150, 0)">
+        <rect x="-12" y="-12" width="24" height="24" rx="3" fill="#0f1a2c" stroke="#0ff" stroke-width="1.5" opacity="0.8">
+          <animate attributeName="opacity" values="0.8;1;0.8" dur="2.9s" repeatCount="indefinite"/>
+        </rect>
+        <rect x="-8" y="-5" width="16" height="10" rx="1" fill="none" stroke="#0ff" stroke-width="1.5"/>
+        <path d="M-8 -5 L0 0 L8 -5" fill="none" stroke="#0ff" stroke-width="1.5"/>
+        <path d="M-8 5 L-3 0 M8 5 L3 0" fill="none" stroke="#0ff" stroke-width="1"/>
+      </g>
+    </a>
+    
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/sambentoffical/" target="_blank">
+      <g transform="translate(180, 0)">
+        <rect x="-12" y="-12" width="24" height="24" rx="3" fill="#0f1a2c" stroke="#e6198d" stroke-width="1.5" opacity="0.8">
+          <animate attributeName="opacity" values="0.8;1;0.8" dur="3.3s" repeatCount="indefinite"/>
+        </rect>
+        <rect x="-6" y="-6" width="12" height="12" rx="3" fill="none" stroke="#e6198d" stroke-width="1.5"/>
+        <circle cx="0" cy="0" r="3" fill="none" stroke="#e6198d" stroke-width="1.5"/>
+        <circle cx="4" cy="-4" r="1" fill="#e6198d"/>
+      </g>
+    </a>
+    
+    <!-- Rumble -->
+    <a href="https://rumble.com/c/DoingFedTime" target="_blank">
+      <g transform="translate(210, 0)">
+        <rect x="-12" y="-12" width="24" height="24" rx="3" fill="#0f1a2c" stroke="#e6198d" stroke-width="1.5" opacity="0.8">
+          <animate attributeName="opacity" values="0.8;1;0.8" dur="2.7s" repeatCount="indefinite"/>
+        </rect>
+        <rect x="-7" y="-5" width="13" height="10" rx="1" fill="none" stroke="#e6198d" stroke-width="1.5"/>
+        <polygon points="0,-2 0,2 5,0" fill="#e6198d"/>
+      </g>
+    </a>
+  </g>
+
+  <!-- Connected Network (Left side) -->
+  <g id="connected-network">
+    <rect x="100" y="150" width="200" height="300" rx="5" ry="5" fill="#1a1a2e" stroke="#e6198d" stroke-width="2"/>
+    
+    <!-- Network title -->
+    <text x="200" y="180" font-family="monospace" font-size="18" fill="#e6198d" text-anchor="middle">CONNECTED NETWORK</text>
+    
+    <!-- Connected computers -->
+    <rect x="130" y="200" width="60" height="60" rx="2" ry="2" fill="#2a2a4a" stroke="#0ff" stroke-width="1"/>
+    <rect x="210" y="200" width="60" height="60" rx="2" ry="2" fill="#2a2a4a" stroke="#0ff" stroke-width="1"/>
+    <rect x="130" y="280" width="60" height="60" rx="2" ry="2" fill="#2a2a4a" stroke="#0ff" stroke-width="1"/>
+    <rect x="210" y="280" width="60" height="60" rx="2" ry="2" fill="#2a2a4a" stroke="#0ff" stroke-width="1"/>
+    
+    <!-- Server -->
+    <rect x="170" y="360" width="60" height="70" rx="2" ry="2" fill="#2a2a4a" stroke="#0ff" stroke-width="1"/>
+    <line x1="170" y1="370" x2="230" y2="370" stroke="#0ff" stroke-width="1"/>
+    <line x1="170" y1="380" x2="230" y2="380" stroke="#0ff" stroke-width="1"/>
+    <line x1="170" y1="390" x2="230" y2="390" stroke="#0ff" stroke-width="1"/>
+    
+    <!-- Network lines -->
+    <line x1="160" y1="230" x2="210" y2="230" stroke="#0ff" stroke-width="1">
+      <animate attributeName="stroke-opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="240" y1="260" x2="240" y2="280" stroke="#0ff" stroke-width="1">
+      <animate attributeName="stroke-opacity" values="0.3;1;0.3" dur="1.5s" repeatCount="indefinite"/>
+    </line>
+    <line x1="160" y1="260" x2="160" y2="280" stroke="#0ff" stroke-width="1">
+      <animate attributeName="stroke-opacity" values="0.3;1;0.3" dur="1.8s" repeatCount="indefinite"/>
+    </line>
+    <line x1="160" y1="340" x2="170" y2="360" stroke="#0ff" stroke-width="1">
+      <animate attributeName="stroke-opacity" values="0.3;1;0.3" dur="2.1s" repeatCount="indefinite"/>
+    </line>
+    <line x1="240" y1="340" x2="230" y2="360" stroke="#0ff" stroke-width="1">
+      <animate attributeName="stroke-opacity" values="0.3;1;0.3" dur="1.7s" repeatCount="indefinite"/>
+    </line>
+    
+    <!-- Internet connection -->
+    <path d="M150,150 L150,130 L250,130 L250,150" stroke="#e6198d" stroke-width="2" fill="none">
+      <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <text x="200" y="122" font-family="monospace" font-size="12" fill="#e6198d" text-anchor="middle">INTERNET</text>
+    
+    <!-- Network threat indicators -->
+    <g id="threat-indicators">
+      <path d="M140,130 L135,135 L140,140" stroke="#ff3a3a" stroke-width="1">
+        <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite"/>
+      </path>
+      <path d="M260,130 L265,135 L260,140" stroke="#ff3a3a" stroke-width="1">
+        <animate attributeName="opacity" values="0;1;0" dur="1.5s" begin="1s" repeatCount="indefinite"/>
+      </path>
+      <circle cx="200" cy="120" r="3" fill="#ff3a3a">
+        <animate attributeName="r" values="2;4;2" dur="3s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+
+  <!-- Air-Gapped System (Right side) -->
+  <g id="air-gapped-system">
+    <rect x="500" y="150" width="200" height="300" rx="5" ry="5" fill="#1a1a2e" stroke="#0ff" stroke-width="2"/>
+    
+    <!-- System title -->
+    <text x="600" y="180" font-family="monospace" font-size="18" fill="#0ff" text-anchor="middle">AIR-GAPPED SYSTEM</text>
+    
+    <!-- Computers -->
+    <rect x="570" y="240" width="60" height="60" rx="2" ry="2" fill="#2a2a4a" stroke="#0ff" stroke-width="1"/>
+    <rect x="570" y="350" width="60" height="60" rx="2" ry="2" fill="#2a2a4a" stroke="#0ff" stroke-width="1"/>
+    
+    <!-- Secure data storage -->
+    <g id="secure-storage">
+      <rect x="578" y="240" width="44" height="10" rx="1" ry="1" fill="#081c29" stroke="#0ff" stroke-width="0.5"/>
+      <rect x="578" y="252" width="44" height="10" rx="1" ry="1" fill="#081c29" stroke="#0ff" stroke-width="0.5"/>
+      <rect x="578" y="264" width="44" height="10" rx="1" ry="1" fill="#081c29" stroke="#0ff" stroke-width="0.5"/>
+      <rect x="578" y="276" width="44" height="10" rx="1" ry="1" fill="#081c29" stroke="#0ff" stroke-width="0.5"/>
+      <rect x="578" y="288" width="44" height="10" rx="1" ry="1" fill="#081c29" stroke="#0ff" stroke-width="0.5"/>
+    </g>
+    
+    <!-- Physical security indicators -->
+    <circle cx="580" cy="225" r="5" fill="#00ff00">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <text x="600" y="225" font-family="monospace" font-size="10" fill="#00ff00" text-anchor="middle">SECURE</text>
+    
+    <circle cx="580" cy="335" r="5" fill="#00ff00">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <text x="600" y="335" font-family="monospace" font-size="10" fill="#00ff00" text-anchor="middle">SECURE</text>
+    
+    <!-- Air-gap barrier -->
+    <g id="barrier">
+      <rect x="390" y="220" width="20" height="160" fill="#081c29" stroke="#0ff" stroke-width="1"/>
+      
+      <!-- No connection indicator -->
+      <line x1="395" y1="240" x2="405" y2="250" stroke="#ff3a3a" stroke-width="2"/>
+      <line x1="395" y1="250" x2="405" y2="240" stroke="#ff3a3a" stroke-width="2"/>
+      
+      <line x1="395" y1="280" x2="405" y2="290" stroke="#ff3a3a" stroke-width="2"/>
+      <line x1="395" y1="290" x2="405" y2="280" stroke="#ff3a3a" stroke-width="2"/>
+      
+      <line x1="395" y1="320" x2="405" y2="330" stroke="#ff3a3a" stroke-width="2"/>
+      <line x1="395" y1="330" x2="405" y2="320" stroke="#ff3a3a" stroke-width="2"/>
+      
+      <line x1="395" y1="360" x2="405" y2="370" stroke="#ff3a3a" stroke-width="2"/>
+      <line x1="395" y1="370" x2="405" y2="360" stroke="#ff3a3a" stroke-width="2"/>
+    </g>
+    
+    <!-- Barrier label -->
+    <text x="400" y="210" font-family="monospace" font-size="14" fill="#ff3a3a" text-anchor="middle">AIR GAP</text>
+    
+    <!-- Attempted connections that fail -->
+    <g id="failed-connections">
+      <path d="M300,250 Q345,270 390,250" stroke="#e6198d" stroke-width="1.5" fill="none">
+        <animate attributeName="d" values="M300,250 Q345,270 390,250;M300,250 Q345,235 390,250;M300,250 Q345,270 390,250" dur="4s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0" dur="2s" repeatCount="indefinite"/>
+      </path>
+      
+      <path d="M300,300 Q345,320 390,300" stroke="#e6198d" stroke-width="1.5" fill="none">
+        <animate attributeName="d" values="M300,300 Q345,320 390,300;M300,300 Q345,285 390,300;M300,300 Q345,320 390,300" dur="3.5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0" dur="1.8s" repeatCount="indefinite"/>
+      </path>
+      
+      <path d="M300,350 Q345,370 390,350" stroke="#e6198d" stroke-width="1.5" fill="none">
+        <animate attributeName="d" values="M300,350 Q345,370 390,350;M300,350 Q345,335 390,350;M300,350 Q345,370 390,350" dur="4.2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0" dur="2.2s" repeatCount="indefinite"/>
+      </path>
+    </g>
+  </g>
+
+  <!-- Physical Data Transfer Methods -->
+  <g id="physical-transfer">
+    <rect x="350" y="430" width="100" height="100" rx="5" ry="5" fill="#1a1a2e" stroke="#ffaa00" stroke-width="2"/>
+    
+    <!-- Drive symbols -->
+    <rect x="365" y="455" width="30" height="20" rx="2" ry="2" fill="#2a2a4a" stroke="#ffaa00" stroke-width="1"/>
+    <circle cx="380" cy="465" r="5" fill="#ffaa00"/>
+    
+    <rect x="405" y="455" width="30" height="20" rx="2" ry="2" fill="#2a2a4a" stroke="#ffaa00" stroke-width="1"/>
+    <circle cx="420" cy="465" r="5" fill="#ffaa00"/>
+    
+    <rect x="385" y="485" width="30" height="20" rx="2" ry="2" fill="#2a2a4a" stroke="#ffaa00" stroke-width="1"/>
+    <circle cx="400" cy="495" r="5" fill="#ffaa00"/>
+    
+    <!-- Section title -->
+    <text x="400" y="445" font-family="monospace" font-size="12" fill="#ffaa00" text-anchor="middle">OFFLINE DATA</text>
+    <text x="400" y="520" font-family="monospace" font-size="12" fill="#ffaa00" text-anchor="middle">TRANSFER ONLY</text>
+    
+    <!-- Animation for physical media -->
+    <g id="moving-drive">
+      <rect x="365" y="455" width="30" height="20" rx="2" ry="2" fill="#2a2a4a" stroke="#ffaa00" stroke-width="1"/>
+      <circle cx="380" cy="465" r="5" fill="#ffaa00"/>
+      <animateMotion path="M0,0 C40,-20 60,-30 120,-20 C160,0 160,60 120,80 C80,100 20,80 0,0" dur="10s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0" dur="10s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- Key Features Section -->
+  <g id="key-features">
+    <!-- Feature 1 -->
+    <circle cx="140" y="500" r="7" fill="#0ff"/>
+    <text x="155" y="504" font-family="monospace" font-size="14" fill="#fff" xml:space="preserve">NO NETWORK CONNECTIONS</text>
+    
+    <!-- Feature 2 -->
+    <circle cx="140" y="530" r="7" fill="#0ff"/>
+    <text x="155" y="534" font-family="monospace" font-size="14" fill="#fff" xml:space="preserve">NO WIRELESS CAPABILITIES</text>
+    
+    <!-- Feature 3 -->
+    <circle cx="140" y="560" r="7" fill="#0ff"/>
+    <text x="155" y="564" font-family="monospace" font-size="14" fill="#fff" xml:space="preserve">NO BLUETOOTH OR USB PORTS</text>
+    
+    <!-- Feature 4 -->
+    <circle cx="440" y="500" r="7" fill="#0ff"/>
+    <text x="455" y="504" font-family="monospace" font-size="14" fill="#fff" xml:space="preserve">PHYSICALLY ISOLATED</text>
+    
+    <!-- Feature 5 -->
+    <circle cx="440" y="530" r="7" fill="#0ff"/>
+    <text x="455" y="534" font-family="monospace" font-size="14" fill="#fff" xml:space="preserve">DATA TRANSFER VIA PHYSICAL MEDIA</text>
+    
+    <!-- Feature 6 -->
+    <circle cx="440" y="560" r="7" fill="#0ff"/>
+    <text x="455" y="564" font-family="monospace" font-size="14" fill="#fff" xml:space="preserve">IMMUNE TO NETWORK ATTACKS</text>
+  </g>
+
+  <!-- Data movement animation -->
+  <g id="data-animation">
+    <!-- Secure data packet -->
+    <g>
+      <rect x="310" y="430" width="15" height="15" fill="#0ff" opacity="0.7">
+        <animate attributeName="x" values="310;330;310" dur="3s" repeatCount="indefinite"/>
+        <animate attributeName="y" values="430;445;430" dur="3s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+    
+    <g>
+      <rect x="475" y="430" width="15" height="15" fill="#0ff" opacity="0.7">
+        <animate attributeName="x" values="475;455;475" dur="2.5s" repeatCount="indefinite"/>
+        <animate attributeName="y" values="430;445;430" dur="2.5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.7;1;0.7" dur="2.5s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+  </g>
+  
+  <!-- Network vulnerability indicators on connected side -->
+  <g id="attack-vectors">
+    <path d="M120,120 L140,140" stroke="#ff3a3a" stroke-width="1" opacity="0.7">
+      <animate attributeName="opacity" values="0;0.7;0" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </path>
+    <path d="M260,120 L240,140" stroke="#ff3a3a" stroke-width="1" opacity="0.7">
+      <animate attributeName="opacity" values="0;0.7;0" dur="2.5s" begin="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M180,120 L170,140" stroke="#ff3a3a" stroke-width="1" opacity="0.7">
+      <animate attributeName="opacity" values="0;0.7;0" dur="2.8s" begin="0.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M220,120 L210,140" stroke="#ff3a3a" stroke-width="1" opacity="0.7">
+      <animate attributeName="opacity" values="0;0.7;0" dur="3.2s" begin="1.5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Security shield animation on air-gapped side -->
+  <g id="security-indicators">
+    <path d="M570,190 C570,200 630,200 630,190" stroke="#00ff00" stroke-width="1" fill="none">
+      <animate attributeName="d" values="M570,190 C570,200 630,200 630,190;M570,185 C570,195 630,195 630,185;M570,190 C570,200 630,200 630,190" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M565,195 C565,210 635,210 635,195" stroke="#00ff00" stroke-width="1" fill="none">
+      <animate attributeName="d" values="M565,195 C565,210 635,210 635,195;M565,190 C565,205 635,205 635,190;M565,195 C565,210 635,210 635,195" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.5;0.2" dur="4s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Additional decorative cyberpunk elements -->
+  <g id="decorative-elements">
+    <circle cx="50" cy="50" r="3" fill="#e6198d">
+      <animate attributeName="r" values="2;4;2" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="750" cy="50" r="3" fill="#e6198d">
+      <animate attributeName="r" values="3;5;3" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="50" cy="550" r="3" fill="#0ff">
+      <animate attributeName="r" values="2;4;2" dur="7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="750" cy="550" r="3" fill="#0ff">
+      <animate attributeName="r" values="3;5;3" dur="8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
