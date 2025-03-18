@@ -1,6 +1,6 @@
 # Air-Gapped System Explained
 
-![Air-Gapped System Animation](https://github.com/DoingFedTime/AirGappedSystemExplained/raw/main/images/air-gapped-system.gif)
+![Air-Gapped System Animation](https://raw.githubusercontent.com/DoingFedTime/AirGappedSystemExplained/refs/heads/main/air-gapped-system.svg)
 
 A cyberpunk-styled interactive SVG visualization explaining air-gapped systems - physically isolated computers or networks that provide maximum security by maintaining a complete separation from unsecured networks.
 
